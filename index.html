@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OneVape</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="animated-heading">
+            <span>O</span>
+            <span>n</span>
+            <span>e</span>
+            <span>V</span>
+            <span>a</span>
+            <span>p</span>
+            <span>e</span>
+        </h1>
+    </header>
+
+    <div class="buttons">
+        <button id="productsButton">Produkty</button>
+        <button id="contactButton">Kontakt</button>
+    </div>
+
+    <section id="products" class="hidden">
+        <h2>Nasze Produkty</h2>
+        <div class="product-list">
+            <div class="product-item">Produkt 1</div>
+            <div class="product-item">Produkt 2</div>
+            <div class="product-item">Produkt 3</div>
+        </div>
+    </section>
+
+    <section id="contact" class="hidden">
+        <h2>Skontaktuj się z nami</h2>
+        <form id="contactForm" method="POST" action="send_mail.php">
+            <div>
+                <label for="name">Imię:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="message">Treść wiadomości:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit">Wyślij</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
